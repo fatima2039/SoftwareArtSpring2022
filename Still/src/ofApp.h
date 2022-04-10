@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
-#include "ofxDropdown.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,6 +21,7 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        
     
         float noise_angle;
         float noise_radius;
@@ -30,8 +30,11 @@ class ofApp : public ofBaseApp{
         float angle;
         float radius;
         int colorchoice;
+        bool isDrawGui;
     
         ofxPanel gui;
+        ofxLabel label6;
+        ofxLabel label7;
         ofxIntSlider shapes;
         ofxIntSlider lines;
         ofxIntSlider themes;
@@ -40,6 +43,7 @@ class ofApp : public ofBaseApp{
         ofxLabel label3;
         ofxLabel label4;
         ofxLabel label5;
+        ofxButton save;
     
     
         float xloc1[20][1000];

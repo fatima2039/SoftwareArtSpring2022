@@ -6,9 +6,12 @@ void ofApp::setup(){
     //background
     ofBackground(0);
     ofEnableSmoothing();
+    isDrawGui = true;
     
     //gui
     gui.setup();
+    gui.add(label6.setup("Hide GUI", "h"));
+    gui.add(label7.setup("Show GUI", "g"));
     gui.add(shapes.setup("No# shapes", 10, 1, 20));
     gui.add(lines.setup("No# lines per shape", 500, 0, 1000));
     gui.add(themes.setup("Color Palette", int(ofRandom(1,5)), 1, 5));
@@ -91,10 +94,13 @@ void ofApp::update(){
     
 }
 
+
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    gui.draw();
+    if (isDrawGui) {
+        gui.draw();
+    }
     
     ofSetLineWidth(1);
     for (int j=0; j<shapes; j++) {
@@ -108,7 +114,12 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    if (key == 104) {
+        isDrawGui = false;
+    }
+    if (key == 103) {
+        isDrawGui = true;
+    }
 }
 
 //--------------------------------------------------------------
