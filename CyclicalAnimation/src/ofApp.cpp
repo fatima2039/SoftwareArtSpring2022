@@ -39,6 +39,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
+    
     //translate to center of screen
     ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
     
