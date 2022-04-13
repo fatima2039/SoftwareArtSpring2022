@@ -1,3 +1,5 @@
+**GALAXY**
+
 For the second sketch, I decided to use simple shapes to make an interesting animation. After playing around with different shapes, starting with squares, then rectangles, then ellipses and then finally, I decided to stick to spheres. Using spheres for animation gives it the 3d effect and all the curve lines of spheres intersecting with each other make for a cool pattern. Additionally, I chose a dark background and contrasting colors while still being part of a pallete to make it visually interesting. The colors, the shapes and the intersection patterns are an inspiration from stars and forces in a galaxy. The app in action has very hypnotizing/ dizzing effect so I played around with the frame rate to be slow enough to figure out the workflow but still fast enough to be interesting. Check out some screen grabs below:
 
 
