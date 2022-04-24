@@ -1,3 +1,5 @@
+**FORCE OF IDEAS**
+
 
 For this assignment, I decided to play around with the physics of the movement of objects on screen. To break down the sketch, there are particles represented by icospheres that are generated every third frame. Their initial location is randomized on screen. Their mass, which controls the speed of the particle and its force of attraction to other particles, is also generated randomly in the start. The color of each particle is also set at random from the available theme colors that are set to one of the previous sketches. Using these colors on the black background makes for a visually pleasing app. Additionally, each particle is given a particular lifespan and it decreases by 1 at each iteration of update(). This value is used as the opacity of the color of the particle and reduction in opacity demonstrates the slow fading away of the particle. At every iteration of draw(), the location of the particle is updated based on the position of other particles, especially the ones that are being newly generated. The distance between two particles and their relative masses controls their velocity, acceleration and thereby the updated location. 
 
