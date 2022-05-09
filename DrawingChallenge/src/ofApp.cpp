@@ -48,7 +48,7 @@ void ofApp::setup(){
     //mysound2.play();
     
     //to allow for random display of image to recreate
-    choice = int(ofRandom(1,3));
+    choice = int(ofRandom(1,3.9));
     
 }
 
