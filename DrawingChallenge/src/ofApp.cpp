@@ -79,7 +79,7 @@ void ofApp::draw(){
     }
     
     //allow for drawing the shapes and recreating the image
-    if (currenttime-timestarted>9 && currenttime-timestarted<129) {
+    if (currenttime-timestarted>9 && currenttime-timestarted<189) {
         //display existing saved shapes
         showprevious();
         
